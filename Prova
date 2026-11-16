@@ -1,0 +1,208 @@
+Questão 1 – Calculadora simples
+
+c
+#include <stdio.h>
+
+int main() {
+    float a, b;
+
+    printf("Digite o primeiro numero: ");
+    scanf("%f", &a);
+
+    printf("Digite o segundo numero: ");
+    scanf("%f", &b);
+
+    printf("Soma: %.2f\n", a + b);
+    printf("Subtracao: %.2f\n", a - b);
+    printf("Multiplicacao: %.2f\n", a * b);
+
+    if (b != 0) {
+        printf("Divisao: %.2f\n", a / b);
+    } else {
+        printf("Nao pode dividir por zero");
+    }
+
+    return 0;
+}
+
+
+Questão 2 – Utilizando for
+
+c
+#include <stdio.h>
+
+int main() {
+    int i;
+
+    for (i = 1; i <= 10; i++) {
+        printf("%d\n", i);
+    }
+
+    return 0;
+}
+
+
+Questão 3 – Utilizando while
+
+c
+#include <stdio.h>
+
+int main() {
+    int i = 1;
+
+    while (i <= 5) {
+        printf("%d\n", i);
+        i++;
+    }
+
+    return 0;
+}
+
+
+Questão 4 – Senha com do while
+
+c
+#include <stdio.h>
+
+int main() {
+    int senha;
+
+    do {
+        printf("Digite a senha: ");
+        scanf("%d", &senha);
+
+    } while (senha != 123);
+
+    printf("Senha correta!\n");
+    printf("Acesso liberado!");
+
+    return 0;
+}
+
+
+Questão 5 – Qual será a saída?
+
+Resposta:
+
+text
+1
+2
+3
+4
+5
+
+
+Questão 6 – Qual será a saída?
+
+Resposta:
+
+text
+Maior que 3
+
+
+Questão 7 – Calculadora com switch case
+
+c
+#include <stdio.h>
+
+int main() {
+    float a, b;
+    int opcao;
+
+    printf("Digite o primeiro numero: ");
+    scanf("%f", &a);
+
+    printf("Digite o segundo numero: ");
+    scanf("%f", &b);
+
+    printf("1 - Soma\n");
+    printf("2 - Subtracao\n");
+    printf("3 - Multiplicacao\n");
+    printf("4 - Divisao\n");
+
+    printf("Escolha uma opcao: ");
+    scanf("%d", &opcao);
+
+    switch (opcao) {
+        case 1:
+            printf("Resultado: %.2f", a + b);
+            break;
+
+        case 2:
+            printf("Resultado: %.2f", a - b);
+            break;
+
+        case 3:
+            printf("Resultado: %.2f", a * b);
+            break;
+
+        case 4:
+            if (b != 0) {
+                printf("Resultado: %.2f", a / b);
+            } else {
+                printf("Nao pode dividir por zero");
+            }
+            break;
+
+        default:
+            printf("Opcao invalida");
+    }
+
+    return 0;
+}
+
+
+Questão 8 – Tabuada
+
+c
+#include <stdio.h>
+
+int main() {
+    int num, i;
+
+    printf("Digite um numero: ");
+    scanf("%d", &num);
+
+    for (i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", num, i, num * i);
+    }
+
+    return 0;
+}
+
+
+Questão 9 – Soma de números
+
+c
+#include <stdio.h>
+
+int main() {
+    int i = 1, soma = 0;
+
+    while (i <= 5) {
+        soma = soma + i;
+        i++;
+    }
+
+    printf("Resultado da soma: %d", soma);
+
+    return 0;
+}
+
+
+Questão 10 – Números pares
+
+c
+#include <stdio.h>
+
+int main() {
+    int i;
+
+    for (i = 1; i <= 20; i++) {
+        if (i % 2 == 0) {
+            printf("%d\n", i);
+        }
+    }
+
+    return 0;
+}
